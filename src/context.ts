@@ -226,6 +226,7 @@ export class NuxtIconModuleContext {
     if (customCollections.length) {
       customCollections.flatMap(collection => Object.entries(collection.icons)
         .map(([name, data]) => {
+          count += 1
           addIcon(collection.prefix, name, data)
         }))
     }
